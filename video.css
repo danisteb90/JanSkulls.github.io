@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;    
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;/*Rellena a toda la pantalla*/
+    position: fixed;
+}
+
+.titulo {
+    background: linear-gradient(90deg, rgba(37,9,3,1) 0%, rgba(242,168,71,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    z-index: 2;
+    position: fixed;
+}
+
+.header {
+    height: 100vh; /*Ocupar el 100% de la ventana de height*/
+    position: relative; /*Para poner encima la letra*/
+    text-align: center; /*alinear*/
+    display: flex; /*No se distorcione*/
+    flex-direction: column; /* ordena de arriba hacia abajo los elementos - nombre en medio, botón abajo*/
+    gap: 10px;
+    justify-content: left; /*Poner en el centro*/
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.container {
+    padding: 40px;
+    position: relative;
+    display: flex;        
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
+}
+
+.container i {
+    cursor: pointer;
+}
